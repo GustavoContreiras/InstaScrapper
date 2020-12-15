@@ -90,7 +90,7 @@ function saveUser() {
         last12IgTvVideosDurationRate: parseFloat(last12IgTvVideosDurationRate),
     }
 
-    fetch("http://localhost:3000/save", {
+    fetch("https://protected-badlands-29733.herokuapp.com/save", {
         "method": "POST",
         "headers": {
             "Content-Type": "application/json"
@@ -114,7 +114,7 @@ function toggleProfiles() {
 
     if ($('#tableUsers').attr('class').includes('d-none')) {
 
-        fetch("http://localhost:3000/list", {
+        fetch("https://protected-badlands-29733.herokuapp.com/list", {
             "method": "GET",
             "headers": {
                 "Content-Type": "application/json"
