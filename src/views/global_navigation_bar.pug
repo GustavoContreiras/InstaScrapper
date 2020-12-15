@@ -1,0 +1,14 @@
+nav#mainNav.navbar.navbar-dark.navbar-expand-lg.fixed-top.bg-dark
+    .container
+        a.navbar-brand(href='#page-top' style='color: var(--light);')
+            | Insta
+            span(style='color: #fec503;') Scrapper
+        button.navbar-toggler.border.rounded-pill.border-dark.navbar-toggler-right(data-toggle='collapse' data-target='#navbarResponsive' type='button' data-toogle='collapse' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation' style='border-style: solid;border-color: var(--dark);')
+            i.fa.fa-bars(style='color: var(--dark);')
+        #navbarResponsive.collapse.navbar-collapse
+            ul.nav.navbar-nav.ml-auto.text-uppercase
+                li.nav-item.d-flex.justify-content-end.align-items-center.mt-2.mt-lg-0.mr-md-2
+                    input#searchInput.border.rounded-pill.mr-2(type='text' style='border-color: var(--dark);text-align: center;' placeholder='Nome do usuário' autocomplete='on')
+                    button.btn.btn-primary.btn-sm.text-dark(type='button' style='border-radius: 32px;border-color: var(--dark);' onclick='return fetchUser();') BUSCAR
+                li.nav-item.text-right.mt-2.mt-lg-0
+                    button.btn.btn-primary.btn-sm.text-uppercase.text-dark(type='button' style='border-radius: 32px;border-color: var(--dark);' onclick="return toggleProfiles();") Perfis Salvos

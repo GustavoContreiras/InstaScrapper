@@ -1,0 +1,55 @@
+#tableData.table-responsive.table-borderless.mb-2(style='border-radius: 32px;')
+    table.table.table-striped.table-bordered.table-dark.mb-0.pb-0
+        tbody
+            tr
+                td.text-right
+                    strong Nome:
+                td(style='width: 50%;' name='fullname')=fullname ? fullname : ''
+            tr
+                td.text-right
+                    strong Usuário:
+                td(name='username')=username !== undefined ? username : ''
+            tr
+                td.text-right
+                    strong Seguidores:
+                td(name='followersCount')=followersCount !== undefined ? followersCount : ''
+            tr
+                td.text-right
+                    strong Seguindo:
+                td(name='followsCount')=followsCount !== undefined ? followsCount : ''
+            tr
+                td.text-right
+                    strong Seguidores mútuos:
+                td(name='mutualFollowsCount')=mutualFollowsCount !== undefined ? mutualFollowsCount : ''
+            tr
+                td.text-right
+                    strong Quantidade de hightlights (destaques):
+                td(name='highlightReelCount')=highlightReelCount !== undefined ? highlightReelCount : ''
+            tr
+                td.text-right
+                    strong Média de likes nos últimos 12 posts:
+                td(name='last12PostsLikeRate')=last12PostsLikeRate !== undefined ? last12PostsLikeRate : ''
+            tr
+                td.text-right
+                    strong Média de comentários nos últimos 12 posts:
+                td(name='videos')=commentsRate !== undefined ? commentsRate : ''
+            tr
+                td.text-right
+                    strong Vídeos nos últimos 12 posts:
+                td(name='last12PostsVideosCount')=last12PostsVideosCount !== undefined ? last12PostsVideosCount : ''
+            tr
+                td.text-right
+                    strong Média de likes nos últimos 12 vídeos do IgTv:
+                td(name='last12IgTvVideosLikeRate')=last12IgTvVideosLikeRate !== undefined ? last12IgTvVideosLikeRate : ''
+            tr
+                td.text-right
+                    strong Quantidade de vídeos no IgTv:
+                td(name='igTvVideosCount')=igTvVideosCount !== undefined ? igTvVideosCount : ''
+            tr
+                td.text-right
+                    strong Duração total dos últimos 12 vídeos:
+                td(name='last12IgTvVideosTotalDuration')=last12IgTvVideosTotalDuration !== undefined ? last12IgTvVideosTotalDuration+'s' : ''
+            tr
+                td.text-right
+                    strong Média de duração nos últimos 12 vídeos do IgTv:
+                td(name='last12IgTvVideosDurationRate')=last12IgTvVideosDurationRate !== undefined ? last12IgTvVideosDurationRate+'s' : ''

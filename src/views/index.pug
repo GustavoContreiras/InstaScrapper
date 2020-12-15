@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        include /global_head.pug
+    body#page-top(style='background: linear-gradient(to left, rgba(255,255,255,0.6) 0%, #138fc2 100%), url("img/5-full.jpg");background-size: cover, cover;')
+        include /global_navigation_bar.pug
+        section
+            .container
+                .text-right.mb-3
+                    button.btn.btn-primary.text-dark(type='button' style='border-radius: 32px;' onclick='return saveUser();') Salvar perfil
+                include /table_data.pug
+                include /table_users.pug
+                
+        include /global_footer.pug
+        include /global_body_end.pug
