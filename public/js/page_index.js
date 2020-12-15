@@ -44,7 +44,6 @@
     $('#tableUsers').toggleClass('d-none');
 
     $('#searchInput').on('keyup', (event) => {
-        console.log(event);
         if (event.key === 'Enter') {
             fetchUser();
         }
@@ -90,7 +89,7 @@ function saveUser() {
         last12IgTvVideosDurationRate: parseFloat(last12IgTvVideosDurationRate),
     }
 
-    fetch("https://protected-badlands-29733.herokuapp.com/save", {
+    fetch(window.location.href + "save", {
         "method": "POST",
         "headers": {
             "Content-Type": "application/json"
@@ -114,7 +113,7 @@ function toggleProfiles() {
 
     if ($('#tableUsers').attr('class').includes('d-none')) {
 
-        fetch("https://protected-badlands-29733.herokuapp.com/list", {
+        fetch(window.location.href + "list", {
             "method": "GET",
             "headers": {
                 "Content-Type": "application/json"
