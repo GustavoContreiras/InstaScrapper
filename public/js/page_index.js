@@ -89,7 +89,7 @@ function saveUser() {
         last12IgTvVideosDurationRate: parseFloat(last12IgTvVideosDurationRate),
     }
 
-    fetch(window.location.href + "save", {
+    fetch(window.location.origin + "/save", {
         "mode": "cors",
         "method": "POST",
         "headers": {
@@ -114,7 +114,7 @@ function toggleProfiles() {
 
     if ($('#tableUsers').attr('class').includes('d-none')) {
 
-        fetch(window.location.href + "list", {
+        fetch(window.location.origin + "/list", {
             "mode": "cors",
             "method": "GET",
             "headers": {
