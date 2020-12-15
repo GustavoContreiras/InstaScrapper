@@ -90,6 +90,7 @@ function saveUser() {
     }
 
     fetch(window.location.href + "save", {
+        "mode": "cors",
         "method": "POST",
         "headers": {
             "Content-Type": "application/json"
@@ -114,6 +115,7 @@ function toggleProfiles() {
     if ($('#tableUsers').attr('class').includes('d-none')) {
 
         fetch(window.location.href + "list", {
+            "mode": "cors",
             "method": "GET",
             "headers": {
                 "Content-Type": "application/json"
